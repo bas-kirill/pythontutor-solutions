@@ -1,12 +1,11 @@
 str = input().split(' ')
 a = [int(elem) for elem in str]
 
-i = 0
+i = 1
+ans = 0
 while i < len(a) - 1:
-    signCur = a[i] > 0
-    signNext = a[i + 1] > 0
-
-    if signCur == signNext:
-        print(a[i], a[i + 1], end=' ')
-        break
+    if a[i - 1] < a[i] > a[i + 1]:
+        ans += 1
     i += 1
+
+print(ans)
