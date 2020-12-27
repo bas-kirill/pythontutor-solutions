@@ -1,8 +1,10 @@
 a = [int(elem) for elem in input().split(' ')]
-cnt = 0
 for i in range(len(a)):
-    for j in range(i + 1, len(a)):
+    flag = True
+    for j in range(len(a)):
+        if i == j:
+            continue
         if a[i] == a[j]:
-            cnt += 1
-
-print(cnt)
+            flag = False
+    if flag:
+        print(a[i], end=' ')
