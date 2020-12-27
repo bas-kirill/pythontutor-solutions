@@ -1,1 +1,1 @@
-print(len(set([int(elem) for elem in input().split(' ')])))
+print(len(set(input().split())))
