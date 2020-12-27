@@ -10,4 +10,3 @@ for i in range(n):
 
 for row in a:
     print(' '.join(row))
-
