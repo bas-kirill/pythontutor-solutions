@@ -4,7 +4,7 @@ numbers = [False] * (n + 1)
 
 inp = input()
 while inp != 'HELP':
-    # print(inp)
+    print(inp)
     if inp == 'HELP':
         break
     a = [int(elem) for elem in inp.split(' ')]
@@ -20,4 +20,4 @@ while inp != 'HELP':
 
 for i in range(1, n + 1):
     if numbers[i]:
-        print(i, end=' ')
+        print(i)
